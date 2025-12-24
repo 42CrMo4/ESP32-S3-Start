@@ -50,7 +50,7 @@ CIRCUITPY/
 ├── code.py
 └── lib/
     └── neopixel.mpy
-````
+```
 
 ---
 
