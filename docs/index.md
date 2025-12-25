@@ -78,7 +78,7 @@ pixels.fill((255, 0, 0))  # Alle LEDs Rot (RGB)
 
 ### LED - komplex
 
-```python
+````python
 import board
 import neopixel
 import time
