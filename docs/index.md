@@ -29,6 +29,7 @@ Dieser sollte jetzt im mittleren Fenster erscheinen.
 ## LEDs 
 
 Die LEDs und den Adafruit Metro ESP32-S3 folgendermaßen verbinden.
+
 - Grau auf GND (0V)
 - Lila auf Vin (USB 5V)
 - Blau auf 5 (Digital Pin D5)
@@ -39,6 +40,10 @@ Die LEDs können vom Adafruit Metro ESP32-S3 programmiert und daher verändert w
 Sie werden auch NeoPixel genannt oder mit der bezeichnung WS2812b. 
 
 ### LED - simple
+
+Den Code im Browser Fenster löschen und folgenden code einfügen.
+Jetzt sollten alle LEDs in Rot leuchten. 
+Wir können in der letzten Zeile alle Farben ausprobieren (255,0,0) mit (0,255,0) oder (0,0,255) ersetzen. 
 
 ````python
 # ===============================
@@ -73,10 +78,10 @@ pixels = neopixel.NeoPixel(
 # FARBE SETZEN
 # -------------------------------
 
-pixels.fill((255, 0, 0))  # Alle LEDs Rot (RGB)
+pixels.fill((255, 0, 0))  # Alle LEDs Rot (Rot, Grün, Blau), die Zahlen 0-255. 
 ````
 
-### LED - komplex
+### LED - Dimmen / Atmen
 
 ````python
 import board
@@ -85,7 +90,7 @@ import time
 
 pixels = neopixel.NeoPixel(
     board.D5,
-    4,
+    NUM_PIXELS = 4
     brightness=0.0,   # Start mit 0 Helligkeit
     auto_write=True
 )
