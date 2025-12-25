@@ -83,6 +83,10 @@ pixels.fill((255, 0, 0))  # Alle LEDs Rot (Rot, Grün, Blau), die Zahlen 0-255.
 
 ### LED - Dimmen / Atmen
 
+Mit diesem Code sollen alle LEDs langsam heller werden bis zur maximalen stärke und dann wieder dimmen bis sie ausgehen. 
+
+Den Code im Browser Fenster löschen und folgenden code einfügen.
+
 ````python
 import board
 import neopixel
