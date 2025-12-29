@@ -1,5 +1,6 @@
 [project]
 site_name = "ESP32-S3-Start"
+docs_dir = "docs"
 
 [project.markdown_extensions.pymdownx.highlight]
 anchor_linenums = true
