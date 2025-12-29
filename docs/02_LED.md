@@ -1,32 +1,4 @@
-# CircuitPython mit Adafruit Metro ESP32-S3
-
-Anleitung für einfache Experimente. 
-
-![alt text](pics/adafruit_products_MS3_reset_button_NeoPixel.jpg)
-
-## Einrichten
-
-Es ist kein Programm notwendig zu installieren. 
-Mit einem Brwoser wie Chrome, Edge oder Opera (Firefox, Safari oder Brave funktionieren nicht) auf folgende Seite gehen. 
-[https://urfdvw.github.io/circuitpython-online-ide-2/](https://urfdvw.github.io/circuitpython-online-ide-2/). 
-
-Dann sollte folgende Seite kommen. 
-
-![IDE Window](pics/IDE.png)
-
-- Adafruit Metro ESP32-S3 mit einem USB-C Kabel an den Computer verbinden
-- ![Serial Por Auswahl](pics/steps.png)
-  - auf `Step 1. OPEN CIRCUITPY DRIVE` klicken und im Finder/Explorer die externe "Festplatte/USB-Stick" CIRCUITPY auswählen (Bestätigungen vom Browser akzeptieren)
-  - auf `Step 2. CONNECT TO SERIAL PORT` klicken und im Fenster auf Metro ESP32-s3 auswählen (Bestätigungen vom Browser akzeptieren)
-    - ![Serial Por Auswahl](pics/port.png)
-
-Dann sollten im folder view links einige Datein auftauchen und ca so ausschauen:
-![Serial Por Auswahl](pics/folderview.png)
-
-Jetzt auf `code.py`clicken, dass ist der code den wir bearbeiten wollen.
-Dieser sollte jetzt im mittleren Fenster erscheinen. 
-
-## LEDs 
+# LEDs 
 
 Die LEDs und den Adafruit Metro ESP32-S3 folgendermaßen verbinden.
 
@@ -39,7 +11,7 @@ Die LEDs und den Adafruit Metro ESP32-S3 folgendermaßen verbinden.
 Die LEDs können vom Adafruit Metro ESP32-S3 programmiert und daher verändert werden.
 Sie werden auch NeoPixel genannt oder mit der bezeichnung WS2812b. 
 
-### LED - simple eine Farbe
+## LED - simple eine Farbe
 
 Den Code im Browser Fenster löschen und folgenden code einfügen.
 Jetzt sollten alle LEDs in Rot leuchten. 
@@ -81,7 +53,7 @@ pixels = neopixel.NeoPixel(
 pixels.fill((255, 0, 0))  # Alle LEDs Rot (Rot, Grün, Blau), die Zahlen 0-255. 
 ````
 
-### LED - mehre Farben
+## LED - mehre Farben
 
 Hier wird für jede LED eine eigene Farbe angegeben. 
 Statt `pixels.fill((255, 0, 0))` also füllen aller LEDs wird jede LED angesporchen mit `pixels[0] = (255, 0, 0)`. 
@@ -126,7 +98,7 @@ pixels[2] = (0, 0, 255)     # LED 2 → Blau
 pixels[3] = (255, 255, 0)   # LED 3 → Gelb
 ````
 
-### LED - mehrere Farben mit Schleife
+## LED - mehrere Farben mit Schleife
 
 In diesem beispiel geben wir nicht jede LED einzeln an sondern sagen von bis welche LED geändert werden soll.
 
@@ -168,7 +140,7 @@ for b in range(1, 3):         # Schleife: b ist eine Variable, "range" is der Be
 
 ````
 
-### LED - Dimmen / Atmen
+## LED - Dimmen / Atmen
 
 Mit diesem Code sollen alle LEDs langsam heller werden bis zur maximalen stärke und dann wieder dimmen bis sie ausgehen. 
 
