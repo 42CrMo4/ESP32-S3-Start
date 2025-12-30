@@ -3,7 +3,7 @@
 Es ist kein Programm notwendig zu installieren. 
 Mit einem Brwoser wie Chrome, Edge oder Opera (Firefox, Safari oder Brave funktionieren nicht) auf folgende Seite gehen. 
 
-[https://urfdvw.github.io/circuitpython-online-ide-2/](https://urfdvw.github.io/circuitpython-online-ide-2/). 
+[https://urfdvw.github.io/circuitpython-online-ide-2/](https://urfdvw.github.io/circuitpython-online-ide-2/)
 
 Dann sollte folgende Seite kommen. 
 
